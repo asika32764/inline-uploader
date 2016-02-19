@@ -2,7 +2,19 @@
 
 A Simple library to support editor image drag & drop upload which like Github issues.
 
+This library is a fork of https://github.com/Rovak/InlineAttachment and add some advanced features.
+
 ![img](https://cloud.githubusercontent.com/assets/1639206/13169541/4a07b1a4-d721-11e5-90fb-b616f96c0e4f.gif)
+
+## Installation
+
+Use bower
+
+``` json
+bower install inline-uploader
+```
+
+Or [download](https://github.com/asika32764/inline-uploader/releases) this package and include it.
 
 ## Support Editors
 
