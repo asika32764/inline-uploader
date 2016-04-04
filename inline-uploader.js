@@ -261,7 +261,7 @@
 
                     self.onFileUploaded(data, name);
                 } else {
-                    self.onErrorUploading();
+                    self.onErrorUploading(name);
                 }
             };
 
@@ -329,8 +329,10 @@
          * When a file didn't upload properly.
          * Override by passing your own onErrorUploading function with this.options.
          */
-        onErrorUploading: function() {
-            var text = this.adapter.getValue().replace(lastValue, "");
+        onErrorUploading: function(name) {
+            var progressText = this.processingFiles[name];
+
+            var text = this.adapter.getValue().replace(progressText, '');
             this.adapter.setValue(text);
 
             if (this.options.errorHandler) {
